@@ -27,6 +27,6 @@ RUN sudo apt-get install --no-install-recommends -yq \
         sudo apt-get clean -q && \
         sudo ln -s /usr/bin/python3 /usr/bin/python
 
-RUN pip3 install aiohttp websockets
+RUN pip3 install aiohttp websockets multidict
 
 
