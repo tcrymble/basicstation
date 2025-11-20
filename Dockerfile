@@ -27,6 +27,11 @@ RUN sudo apt-get install --no-install-recommends -yq \
         sudo apt-get clean -q && \
         sudo ln -s /usr/bin/python3 /usr/bin/python
 
+# to install packages correctly - upgrade pip3 before installing 
+RUN pip3 install --upgrade pip
+
+RUN pip3 install multidict
+
 RUN pip3 install aiohttp websockets
 
 
